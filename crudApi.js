@@ -2,11 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 
-
 const router = express.Router();
 
 // 使用body-parser來解析請求主體
 router.use(bodyParser.json());
+
 
 let users = [
   { id: 1, name: 'John', email: 'john@example.com' },
